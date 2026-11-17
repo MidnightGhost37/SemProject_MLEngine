@@ -2,3 +2,14 @@
 __pycache__/
 .ipynb_checkpoints/
 .env
+
+# Local waiting-time research outputs, never credentials or live state
+waiting_time/runtime/
+waiting_time/data/raw/
+waiting_time/artifacts/
+reports/waiting-time/*.joblib
+*.egg-info/
+
+# Local delivery helpers and duplicate downloadable bundles
+.library-transfer*/
+SemFlow_waiting_benchmark_*.zip

@@ -1,0 +1,54 @@
+{
+  "data_kind": "synthetic",
+  "seed": 20261117,
+  "days": 365,
+  "start_date": "2025-11-01",
+  "split_day_offsets": [
+    0,
+    255,
+    310,
+    365
+  ],
+  "counts": {
+    "train": {
+      "queries": 943946,
+      "positive": 513070,
+      "sessions": 6120,
+      "arrivals": 119908
+    },
+    "validation": {
+      "queries": 203642,
+      "positive": 110951,
+      "sessions": 1320,
+      "arrivals": 25901
+    },
+    "test": {
+      "queries": 203702,
+      "positive": 111278,
+      "sessions": 1320,
+      "arrivals": 26001
+    }
+  },
+  "positive_class": "next vehicle arrival in <= 5 minutes",
+  "probability_threshold": 0.5,
+  "features": [
+    "stage_code",
+    "service_code",
+    "direction_code",
+    "hour",
+    "weekday",
+    "elapsed_minutes",
+    "last_headway_minutes"
+  ],
+  "place_names": [
+    "Kencom",
+    "Odeon",
+    "Railways area"
+  ],
+  "services": "Two fictional services at every stage; no real route assertion",
+  "limitations": "All timestamps, headways, services and outcomes are simulated. Minute queries are correlated, not independent field observations. More synthetic rows do not establish real-world accuracy.",
+  "sha256": {
+    "arrivals.csv.gz": "4238880049f9a80ceba54e966c55d3b4be64672fa7654e21664077827f1016c6",
+    "queries.csv.gz": "2f66902f223d97eb7960e405efe4f168c20d408d200189fa66fb57f2385a0b03"
+  }
+}

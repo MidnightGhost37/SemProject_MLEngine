@@ -1,0 +1,183 @@
+{
+  "data_kind": "synthetic",
+  "positive_class": "wait_minutes <= 5",
+  "probability_threshold": 0.5,
+  "features": [
+    "stage_code",
+    "service_code",
+    "direction_code",
+    "hour",
+    "weekday",
+    "elapsed_minutes",
+    "last_headway_minutes"
+  ],
+  "split_summary": {
+    "train": {
+      "queries": 943946,
+      "sessions": 6120,
+      "days": 255,
+      "positive_prevalence": 0.5435374481167355
+    },
+    "validation": {
+      "queries": 203642,
+      "sessions": 1320,
+      "days": 55,
+      "positive_prevalence": 0.5448335804991112
+    },
+    "test": {
+      "queries": 203702,
+      "sessions": 1320,
+      "days": 55,
+      "positive_prevalence": 0.5462783870556008
+    }
+  },
+  "classification": {
+    "prior_baseline": {
+      "validation": {
+        "accuracy": 0.5448335804991112,
+        "precision": 0.5448335804991112,
+        "recall": 1.0,
+        "f1_score": 0.7053621663546232,
+        "roc_auc": 0.5,
+        "mcc": 0.0,
+        "confusion_matrix_actual_rows_predicted_columns_0_1": [
+          [
+            0,
+            92691
+          ],
+          [
+            0,
+            110951
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.5462783870556008,
+        "precision": 0.5462783870556008,
+        "recall": 1.0,
+        "f1_score": 0.7065718458314814,
+        "roc_auc": 0.5,
+        "mcc": 0.0,
+        "confusion_matrix_actual_rows_predicted_columns_0_1": [
+          [
+            0,
+            92424
+          ],
+          [
+            0,
+            111278
+          ]
+        ]
+      }
+    },
+    "logistic_regression": {
+      "validation": {
+        "accuracy": 0.8092878679250842,
+        "precision": 0.812815574410494,
+        "recall": 0.8444268190462456,
+        "f1_score": 0.8283197107202377,
+        "roc_auc": 0.8765094207909634,
+        "mcc": 0.6145709307880773,
+        "confusion_matrix_actual_rows_predicted_columns_0_1": [
+          [
+            71115,
+            21576
+          ],
+          [
+            17261,
+            93690
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.8120784282923094,
+        "precision": 0.8145760433006395,
+        "recall": 0.8493323028810726,
+        "f1_score": 0.8315911730545877,
+        "roc_auc": 0.8806226926019751,
+        "mcc": 0.6199439585304509,
+        "confusion_matrix_actual_rows_predicted_columns_0_1": [
+          [
+            70910,
+            21514
+          ],
+          [
+            16766,
+            94512
+          ]
+        ]
+      }
+    },
+    "hist_gradient_boosting": {
+      "validation": {
+        "accuracy": 0.8118511898331385,
+        "precision": 0.8039061454009908,
+        "recall": 0.8658777298086543,
+        "f1_score": 0.8337419452821592,
+        "roc_auc": 0.8853295392135161,
+        "mcc": 0.6200111690300044,
+        "confusion_matrix_actual_rows_predicted_columns_0_1": [
+          [
+            69257,
+            23434
+          ],
+          [
+            14881,
+            96070
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.8144937212202138,
+        "precision": 0.8064586078630882,
+        "recall": 0.8689588238465824,
+        "f1_score": 0.836542953542694,
+        "roc_auc": 0.8876555513138871,
+        "mcc": 0.6251204973416076,
+        "confusion_matrix_actual_rows_predicted_columns_0_1": [
+          [
+            69218,
+            23206
+          ],
+          [
+            14582,
+            96696
+          ]
+        ]
+      }
+    }
+  },
+  "regression": {
+    "validation": {
+      "last_headway_baseline": {
+        "mae_minutes": 2.217570213086364,
+        "rmse_minutes": 3.182089852003968
+      },
+      "hist_gradient_boosting_median": {
+        "mae_minutes": 1.7596594029688337,
+        "rmse_minutes": 2.6039970847523226
+      }
+    },
+    "test": {
+      "last_headway_baseline": {
+        "mae_minutes": 2.1833400424803555,
+        "rmse_minutes": 3.0835927408561123
+      },
+      "hist_gradient_boosting_median": {
+        "mae_minutes": 1.7312698539962539,
+        "rmse_minutes": 2.5310021854486386
+      }
+    }
+  },
+  "warning": "Synthetic-only scores; correlated queries; not Nairobi field accuracy. Fixed settings and threshold; no test-based tuning. Existing QRF app model unchanged.",
+  "software_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1"
+  },
+  "source_sha256": {
+    "build_waiting_benchmark.py": "5c3005be0954282b92b775bdd280a0fa9a1fc105d930c22490a1f03842962fdd",
+    "evaluate_waiting_benchmark.py": "1e91057450f0ca00f4a0432d154cae9af715af188b6a0b75e45ee6a43ef19851"
+  },
+  "source_hash_format": "sha256 of UTF-8 source with LF line endings"
+}

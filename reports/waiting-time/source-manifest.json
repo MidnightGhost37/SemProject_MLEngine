@@ -1,0 +1,17 @@
+{
+  "hash_format": "sha256 of UTF-8 source with LF line endings",
+  "files": {
+    "src/nganyaflow/admin.py": "89a3825eeb05a4530f509ec03d9bee09cf9f1119fbd2ea2316c4e4b05f6f60d3",
+    "src/nganyaflow/admin_ui.py": "9b3ccf077bbdca860b2c6129fac2044f34c015f7d45b6ec6655bd21838c3de17",
+    "src/nganyaflow/cli.py": "a01daa88ec1ddb43e409d7375544b26b99170ec979f16d696f938f2f2f8dc828",
+    "src/nganyaflow/config.py": "8903f31cc806cdfb51b1d52c20647bb5ca1c00e7174038b7c20c3f08ef4e651c",
+    "src/nganyaflow/datasets.py": "fa92dd0ba039af25c1fdd0c3b719bd55a9412d2e43e5e24be8c34d4467117567",
+    "src/nganyaflow/main.py": "34208650cd5b77a2d17cfbf8a31bebddf98afaba0de87c15ddd88c6d9ae4dbf1",
+    "src/nganyaflow/ml.py": "3c0b7f6acb66082f596250c2d07b12cf3a64cb93574bac69d900d13edc00ee7b",
+    "src/nganyaflow/prepare_waiting.py": "1c360e692cf3340acc84aef66a1e169d19770a420ef23df9dad6e8b40026b6c8",
+    "src/nganyaflow/schemas.py": "07a3cc924ca8017e0971387812bf506196f14036dfc8c61d8a6199d8fd599d66",
+    "src/nganyaflow/storage.py": "06fdad7e2a938e176264d2ebf98af607120e25cfc1b05251cdfc134f198b7238",
+    "src/nganyaflow/synthetic.py": "318fa711ac169fb2903af5ac2d4585d542d8e153a3104ef5ec10f33335c0fe9c",
+    "src/nganyaflow/__init__.py": "2227d7d85c1b3170a170b6d9ce3f7bf3733ef05f15c1be8a39a552dfd3adc323"
+  }
+}
